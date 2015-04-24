@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.hadoop:hadoop-client:2.2.0+'
+
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.apache.mrunit:mrunit:0.8.0-incubating'
+}
+
